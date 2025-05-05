@@ -51,7 +51,9 @@ a {text-decoration: none;}
 .container::before { content: ""; background: rgba(0,0,0,0.6); position: absolute; inset: 0;z-index: -1;}
 .wrapper { max-width: 1400px; margin: 0 auto;}
 
-.container h1 { font-size: 60px; font-weight: bold;color: white;margin-bottom: 20px;}
+.container h1 { font-size: 60px; font-weight: bold;color: white;margin-bottom: 20px; position: absolute;
+  top: 20%;
+}
 .container h1 span { color: #ff4654}
 .container .flex { display: flex; min-height: 80vh; justify-content: center; align-items: center;flex-direction: column;}
 .container .flex p { color: white; text-align: center; width: 60%;margin: 20px 0 40px;line-height: 140%;}
