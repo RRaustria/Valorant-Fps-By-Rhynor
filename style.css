@@ -51,12 +51,10 @@ a {text-decoration: none;}
 .container::before { content: ""; background: rgba(0,0,0,0.6); position: absolute; inset: 0;z-index: -1;}
 .wrapper { max-width: 1400px; margin: 0 auto;}
 
-.container h1 { font-size: 60px; font-weight: bold;color: white;margin-bottom: 20px; position: absolute;
-  top: 20%;
-}
+.container h1 { font-size: 60px; font-weight: bold;color: white;margin-bottom: 20px;position: absolute;top: 25%;}
 .container h1 span { color: #ff4654}
 .container .flex { display: flex; min-height: 80vh; justify-content: center; align-items: center;flex-direction: column;}
-.container .flex p { color: white; text-align: center; width: 60%;margin: 20px 0 40px;line-height: 140%;}
+.container .flex p { color: white; text-align: center; width: 60%;margin: 60px 0 40px;line-height: 140%;}
 .fpspack {  max-width: 250px;width: 100%;}
 .fpspack a { max-width: 250px; background: #ff4654; color: white; width: 100%;line-height: 100%;display: inline-block;line-height: 50px;font-size: 20px;text-align: center;border-radius: 10px;transition: .3s linear;}
 .fpspack a:hover { background: white; color:#ff4654 ;}
@@ -64,3 +62,31 @@ a {text-decoration: none;}
     color: #ff4655; /* Valorant red, for example */
     font-weight: bold;
 }
+
+@media only screen and (max-width:1300px) {
+	.container .flex p { width: 70%; }
+}
+
+@media only screen and (max-width:1000px) {
+	.container h1 { font-size: 50px; }
+	.wrapper { padding: 20px;}
+}
+
+@media only screen and (max-width: 800px) {
+	.container .flex p { width: 80%; }
+	.container .flex p { margin: 100px 0 40px; }
+	.container h1 { font-size: 40px; }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+	.container .flex p { width: 100%; }
+	.container .flex p { margin: 20px 0 40px; }
+	.container h1 { font-size: 30px; }
+}
+
+@media only screen and (max-width: 450px) {
+	.container .flex p { margin: 100px 0 40px; }
+	.container h1 { text-align: center; }
+	}
