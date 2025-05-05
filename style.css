@@ -87,6 +87,6 @@ a {text-decoration: none;}
 }
 
 @media only screen and (max-width: 450px) {
-	.container .flex p { margin: 100px 0 40px; }
+	.container .flex p { margin: 200px 0 40px; }
 	.container h1 { text-align: center; }
 	}
